@@ -8,7 +8,7 @@ const {User} = require('./../server/models/user');
 //     console.log(result);
 // });
 
-Todo.findOneAndRemove('5cc2fa420edeb469445a45d4').then((todo) => {
+Todo.findOneAndRemove({_id: '5cc2fa420edeb469445a45d4'}).then((todo) => {
     console.log(todo);
 });
 
